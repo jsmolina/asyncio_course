@@ -1,2 +1,2 @@
-# asyncio_course
-Provide some examples of asyncio
+# Asyncio
+Just try to make asyncio more human and provide some real-life examples of asyncio
