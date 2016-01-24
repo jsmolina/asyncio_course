@@ -20,10 +20,10 @@ def got_milk(future):
     
 @asyncio.coroutine
 def coffee(future2):
-    print('The coffee machine will take 20 secs\n$ ', end="")
+    print('The coffee machine will take 10 secs\n$ ', end="")
     
     start = time.time()
-    while time.time() - start < 20:
+    while time.time() - start < 10:
         yield from asyncio.sleep(2)
     future2.set_result('Got coffee!')
 
@@ -53,7 +53,7 @@ def process_input():
             print("you should prepare it first!\n$ ", end="")
     else:
         if i != "":
-            print("Sorry, can you repeat?")
+            print("Sorry, can you repeat?\n$ ", end="")
         
 
 print("I woke up really asleep, coffee and milk? breakfast when done\n$ ", end="")
