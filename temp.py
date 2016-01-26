@@ -64,7 +64,7 @@ def process_input():
     asyncio.async(get_image_size(i, future))
     future.add_done_callback(got_size)
         
-print("I woke up really asleep, coffee and milk? breakfast when done\n$ ", end="")
+print("Open a file?\n$ ", end="")
 loop = asyncio.get_event_loop()
 loop.add_reader(sys.stdin, process_input)
 try:
