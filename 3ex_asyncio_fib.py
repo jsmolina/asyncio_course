@@ -1,7 +1,6 @@
 import asyncio
 import time
 import sys
-from concurrent.futures import ProcessPoolExecutor
 
 pool_outputs = []
 
