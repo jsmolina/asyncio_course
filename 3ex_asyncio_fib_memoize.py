@@ -32,6 +32,8 @@ def execute_fib(n):
 if __name__ == '__main__':
     inputs = list(range(800, 1000))
     print("Calculating from {} to {}".format(inputs[0], inputs[-1]))
+    print("note: it is not recommended do a calculus like this in asyncio")
+    print("but I can do a simple memoize without worrying for locks")
     
     loop = asyncio.get_event_loop()
     
