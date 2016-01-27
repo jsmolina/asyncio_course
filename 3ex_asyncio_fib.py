@@ -20,6 +20,7 @@ def execute_fib(n):
 
                          
 if __name__ == '__main__':
+    print("note: it is not recommended do a calculus like this in asyncio, just for example")
     inputs = list(range(800, 1000))
     print("Calculating from {} to {}".format(inputs[0], inputs[-1]))
     
